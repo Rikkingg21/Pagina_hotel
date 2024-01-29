@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main-header {
+    position: relative;
+    padding: 0;
+    
+}
+
+.img_header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    
+}
+
+.header-text {
+    color: #6d0000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffd700; /* Cambia el color al pasar el mouse sobre el enlace */
+}
+
+section {
+    margin: 20px;
+}
+/*home*/
+.home {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Estilos para los elementos destacados */
+.destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.destacado {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destacado img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Añade bordes redondeados a las imágenes */
+}
+
+/* Estilos para intercalar la información */
+.destacado:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.destacado:nth-child(even) img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.destacado h3, .destacado p {
+    margin-bottom: 10px;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .destacado {
+        width: 100%;
+    }
+
+    .destacado img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+/*habitaciones*/
+.habitaciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #6d0000;;
+}
+
+.habitacion {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.habitacion img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.habitacion:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6d0000;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.habitacion:hover .overlay {
+    opacity: 0.7;
+}
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .habitacion {
+        width: 100%;
+    }
+}
+
+/* Ajustes para tamaños de pantalla mayores a 768px */
+@media (min-width: 769px) {
+    .habitacion {
+        width: 48%; /* Ancho para la distribución de 2x2 */
+    }
+}
+/*servicios*/
+.servicios {
+    text-align: center;
+    padding: 40px;
+}
+
+.carrusel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+    max-width: 800px; /* Ajusta el ancho máximo del carrusel según tus necesidades */
+    margin: 0 auto;
+}
+
+.servicio {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+}
+
+.servicio.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Botones de navegación del carrusel */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .carrusel {
+        grid-template-columns: repeat(1, 1fr); /* Cambiamos a una columna en dispositivos móviles */
+    }
+}
+
+/*contacto*/
+.contacto {
+    text-align: center;
+    padding: 40px;
+    background-color: #6d0000;
+    color: white;
+}
+
+/* Estilo para la información de contacto */
+.info-contacto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada ítem de contacto */
+.contacto-item {
+    flex: 0 0 45%;
+}
+
+/* Estilo para el mapa de Google Maps */
+#google-map {
+    height: 300px; /* Ajusta la altura según sea necesario */
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}

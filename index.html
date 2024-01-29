@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedaje Majestuopso</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <img class="img_header" src="img/h_majestuoso.jpg">
+        <div class="header-text">
+            <h1>Hospedaje Majestuoso</h1>
+            <p>Tu hogar lejos de casa</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#habitaciones">Habitaciones</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" id="home">
+        <h2>Bienvenido a Hospedaje Majestuoso</h2>
+        <p>Somos un hospedaje de lujo ubicado en el corazón de la encantadora ciudad de Tacna. Con una combinación perfecta de elegancia y comodidad, te ofrecemos una experiencia única.</p>
+    
+        <div class="destacados">
+            <div class="destacado">
+                <img src="img/Cama.jpg" alt="Confort">
+                <h3>Confort Excepcional</h3>
+                <p>Nuestras habitaciones están diseñadas para brindarte el máximo confort. Camas suaves y amenidades de alta calidad te esperan.</p>
+            </div>
+    
+            <div class="destacado">
+                <img src="img/desayuno.jpg" alt="Restaurante">
+                <h3>Restaurante Exquisito</h3>
+                <p>Disfruta de deliciosos platillos preparados por nuestros chefs expertos. Una experiencia gastronómica que deleitará tus sentidos.</p>
+            </div>
+        </div>
+    
+        <p>En Hospedaje Majestuoso, nos esforzamos por brindar a nuestros huéspedes una experiencia inolvidable. Ya sea que estés aquí por negocios o placer, estamos comprometidos a hacer que tu estadía sea especial.</p>
+    </section>
+
+    <section class="habitaciones" id="habitaciones">
+        <div class="habitacion" data-numero="simple">
+            <img src="img/h_simple.jpg  " alt="Habitación Simple">
+            <div class="overlay">
+                <a href="https://wa.me/+51933861191" target="_blank">Reservar ahora</a>
+            </div>
+        </div>
+        <div class="habitacion" data-numero="matrimonial">
+            <img src="img/h_doble.jpg" alt="Habitación Matrimonial">
+            <div class="overlay">
+                <a href="https://wa.me/+51933861191" target="_blank">Reservar ahora</a>
+            </div>
+        </div>
+        <div class="habitacion" data-numero="triple">
+            <img src="img/h_triple.jpg" alt="Habitación Triple">
+            <div class="overlay">
+                <a href="https://wa.me/+51933861191" target="_blank">Reservar ahora</a>
+            </div>
+        </div>
+        <div class="habitacion" data-numero="familiar">
+            
+            <img src="img/h_familiar.jpg" alt="Habitación Familiar">
+            <div class="overlay">
+                <a href="https://wa.me/+51933861191" target="_blank">Reservar ahora</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="servicios" id="servicios">
+        <div class="carrusel">
+            <div class="servicio active">
+                <img src="img/cochera.png" alt="Cochera 24h">
+                <h3>Cochera 24h</h3>
+                <p>Estacionamiento seguro disponible las 24 horas.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/desayuno.png" alt="Desayuno">
+                <h3>Desayuno</h3>
+                <p>Delicioso desayuno incluido para comenzar tu día.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/limpieza.png" alt="Servicio a la Habitación">
+                <h3>Servicio a la Habitación</h3>
+                <p>Solicita nuestros servicios directamente en tu habitación.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/tv.png" alt="Smart TV">
+                <h3>Smart TV</h3>
+                <p>Disfruta de entretenimiento con televisores inteligentes en cada habitación.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/wifi.png" alt="Wifi">
+                <h3>Wifi</h3>
+                <p>Conexión a internet de alta velocidad disponible en todo el hotel.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/restaurante.png" alt="Restaurante 1er Piso">
+                <h3>Restaurante 1er Piso</h3>
+                <p>Prueba nuestra exquisita cocina en el restaurante del primer piso.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/ducha.png" alt="Agua Caliente">
+                <h3>Agua Caliente</h3>
+                <p>Agua caliente disponible en todas las habitaciones.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/bano.png" alt="Baño Privado">
+                <h3>Baño Privado</h3>
+                <p>Baños privados para mayor comodidad y privacidad.</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="img/24h.png" alt="Atención 24h">
+                <h3>Atención 24h</h3>
+                <p>Recepción y atención al cliente disponible las 24 horas.</p>
+            </div>
+    
+            <!-- Botones de navegación del carrusel -->
+            <button class="prev" onclick="changeService(-1)">&#10094;</button>
+            <button class="next" onclick="changeService(1)">&#10095;</button>
+            <script src="js/funciones.js"></script>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="info-contacto">
+          <div class="contacto-item">
+            <h3>Teléfono</h3>
+            <p>+51 933861191</p>
+          </div>
+          <div class="contacto-item">
+            <h3>Correo Electrónico</h3>
+            <p>x_xricardo@hotmail.com</p>
+          </div>
+        </div>
+        
+        <!-- Espacio para el mapa de Google Maps -->
+        <div id="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.27756599044545!2d-70.2505914431557!3d-18.014966395682876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf65b806a239%3A0xf43832a2e511f8b2!2sMajestuoso%20Hospedaje!5e0!3m2!1ses-419!2spe!4v1706514727203!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+</body>
+</html>
